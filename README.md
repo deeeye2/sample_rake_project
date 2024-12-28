@@ -1,0 +1,1 @@
+# sample_rake_project
