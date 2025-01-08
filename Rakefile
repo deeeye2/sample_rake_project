@@ -14,3 +14,10 @@ desc "Run the main script"
 task :run_main do
   ruby "src/main.rb"
 end
+
+desc "Build the application"
+task :build do
+  puts "Building the application..."
+  sh "mkdir -p build && cp src/main.rb build/main.rb"
+  puts "Build completed successfully."
+end
